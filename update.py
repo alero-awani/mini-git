@@ -24,6 +24,7 @@ field_map = {
 
 choice = input("\nEnter number: ")
 field = field_map[choice]
+#author = field_map[2]
 
 new_value = input(f"Enter new value for {field}: ")
 

@@ -1,3 +1,14 @@
+"""
+search_description.py
+
+Searches commits by a keyword in the description using a linear search.
+Time Complexity: Linear Search — O(n)
+Space Complexity: O(1) - Best case, if no commits match, O(n) - Worst case, if all commits match
+Reason: descriptions are free-form text and cannot be sorted, so binary search is not possible.
+        must also check every element in case there are multiple matches.
+Usage: python3 search_description.py
+Git equivalent: git log --grep="keyword"
+"""
 from store import load
 
 commits = load()

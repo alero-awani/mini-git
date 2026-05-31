@@ -1,3 +1,4 @@
+# Space: O(log n)
 def merge_sort(arr, key):
     # base case: a list of 0 or 1 elements is already sorted, nothing to do
     if len(arr) <= 1:
@@ -15,7 +16,7 @@ def merge_sort(arr, key):
     # merge the two sorted halves back together
     return merge(left, right, key)
 
-
+# Space: O(n)
 def merge(left, right, key):
     result = []  # this will hold the merged, sorted elements
     i = 0        # pointer for the left half
@@ -37,3 +38,5 @@ def merge(left, right, key):
     result += right[j:]
 
     return result
+
+#Space Complexity: O(log n) + O(n) = O(n)

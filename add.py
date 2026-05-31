@@ -3,6 +3,7 @@ from datetime import datetime
 
 repo = input("Repo name: ")
 author = input("Author: ")
+#user does not input the timestamp, it is generated automatically when the commit is added. This is how it works in real git as well
 timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
 description = input("Description: ")
 lines_edited = int(input("Lines edited: "))
